@@ -45,7 +45,6 @@ export default function Home() {
       >
         Send Test Notification
       </Button>
-      <InstallPrompt />
     </main>
   );
 }

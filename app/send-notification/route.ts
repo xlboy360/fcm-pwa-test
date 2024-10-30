@@ -25,12 +25,14 @@ export async function POST(request: NextRequest) {
       },
     },
   };
-
+  console.log("PAYLOAD: ",payload)
   try {
     await admin.messaging().send(payload);
 
     return NextResponse.json({ success: true, message: "Notification sent!" });
   } catch (error) {
+    console.log(service_json);
+          
     return NextResponse.json({ success: false, error });
   }
 }
