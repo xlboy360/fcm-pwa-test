@@ -1,0 +1,25 @@
+{
+    "name": "PWA Next.js",
+    "short_name": "pwa-nextjs",
+    "theme_color": "#35155D",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "icons/icon-192x92.jpg",
+        "sizes": "48x48",
+        "type": "image/jpg",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "icons/icon-750-1334.jpg",
+        "sizes": "384x384",
+        "type": "image/jpg",
+        "purpose": "maskable any"
+      }
+    ],
+    "splash_pages": null
+  }
