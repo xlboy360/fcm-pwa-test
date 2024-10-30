@@ -25,6 +25,7 @@ export default function Home() {
     console.log(data);
   };
 
+
   return (
     <main className="p-10">
       <h1 className="text-4xl mb-4 font-bold">Firebase Cloud Messaging Demo</h1>
@@ -45,6 +46,15 @@ export default function Home() {
       >
         Send Test Notification
       </Button>
+      
+      <Button
+        className="mt-5"
+      >
+        Request Notifications
+      </Button>
+
+      <span id="token_span">{token}</span>
+
     </main>
   );
 }
