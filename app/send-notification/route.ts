@@ -1,12 +1,12 @@
-import admin from "firebase-admin";
+import admin, { ServiceAccount } from "firebase-admin";
 import { Message } from "firebase-admin/messaging";
 import { NextRequest, NextResponse } from "next/server";
+import { service_json } from "../../service_key"
 
 // Initialize Firebase Admin SDK
 if (!admin.apps.length) {
-  const serviceAccount = require("@/service_key.json");
   admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
+    credential: admin.credential.cert(service_json as ServiceAccount),
   });
 }
 
