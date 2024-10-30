@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import useFcmToken from "@/hooks/useFcmToken";
 
 export default function Home() {
-  const { token, notificationPermissionStatus } = useFcmToken();
+  const { loadToken, token, notificationPermissionStatus } = useFcmToken();
 
   const handleTestNotification = async () => {
     const response = await fetch("/send-notification", {
@@ -24,7 +24,6 @@ export default function Home() {
     const data = await response.json();
     console.log(data);
   };
-
 
   return (
     <main className="p-10">
@@ -46,15 +45,12 @@ export default function Home() {
       >
         Send Test Notification
       </Button>
-      
-      <Button
-        className="mt-5"
-      >
+
+      <Button className="mt-5" onClick={loadToken}>
         Request Notifications
       </Button>
 
       <span id="token_span">{token}</span>
-
     </main>
   );
 }
