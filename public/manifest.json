@@ -4,20 +4,20 @@
     "theme_color": "#35155D",
     "background_color": "#ffffff",
     "display": "standalone",
-    "orientation": "portrait",
+    "orientation": "natural",
     "scope": "/",
     "start_url": "/",
     "icons": [
       {
-        "src": "icons/icon-192x92.jpg",
+        "src": "icons/icon-48.png",
         "sizes": "48x48",
-        "type": "image/jpg",
+        "type": "image/png",
         "purpose": "maskable any"
       },
       {
-        "src": "icons/icon-750-1334.jpg",
-        "sizes": "384x384",
-        "type": "image/jpg",
+        "src": "icons/icon-256.png",
+        "sizes": "256x256",
+        "type": "image/png",
         "purpose": "maskable any"
       }
     ],
